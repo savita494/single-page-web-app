@@ -1,9 +1,7 @@
 import React from 'react';
-import { Switch,Route } from 'react-router';
 import { connect } from 'react-redux';
 
 import Directory from '../../components/directory/directory.component';
-import { auth } from '../../firebase/firebase.utils';
 
 import './homepage.styles.scss';
 

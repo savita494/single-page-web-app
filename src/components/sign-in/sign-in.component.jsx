@@ -1,13 +1,9 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
-import HomePage from '../../pages/homepage/homepage.component';
 
 import { auth, signInWithGoogle,signInWithFacebook } from '../../firebase/firebase.utils';
-// import { auth, signInWithFacebook } from '../../firebase/firebase.utils';
-// import {firebase} from '../../firebase/config';
 
 import './sign-in.styles.scss';
 

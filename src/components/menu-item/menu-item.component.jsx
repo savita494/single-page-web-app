@@ -1,8 +1,5 @@
 import React from 'react';
-import { version } from 'react-dom';
-import { withRouter ,Link} from 'react-router-dom';
-import Alex from '../../pages/alexinfo/alex';
-import Shop from '../../pages/shop/shop.component';
+import { withRouter} from 'react-router-dom';
 import './menu-item.styles.scss'
 
 
