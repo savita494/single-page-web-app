@@ -2,6 +2,7 @@
   width: 450px;
   display: flex;
   flex-direction: column;
+ // background-color: cyan;
 
   .title {
     margin: 10px 0;
@@ -10,7 +11,53 @@
   .buttons {
     display: flex;
     justify-content: space-between;
-color: black;    
+    //background-color: cornflowerblue;
+    .googleButton{
+      min-width: 123px;
+
+      background-color:blue;
+        letter-spacing: 0.5px;
+
+      text-transform: uppercase;
+      line-height: 20px;
+      color: white;
+      font-size: 13px;
+
+      font-family: 'Open Sans Condensed';
+      font-weight: bolder;
+
+      border:none;
+
+      cursor: pointer;
+  display: flex;
+  justify-content: center;
+  &:hover {
+    background-color: #357ae8;
+    border: none;
+  }
+  
+    }
+    .facebookButton{
+      min-width: 123px;
+//text-align: center;
+      background-color:blueviolet;
+        letter-spacing: 0.5px;
+
+      text-transform: uppercase;
+      line-height: 20px;
+      color: white;
+      font-size: 13px;
+
+      font-family: 'Open Sans Condensed';
+      font-weight: bolder;
+
+      border:none;
+
+      cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+    }
   }
   
 }
