@@ -14,8 +14,9 @@ const HomePage = ({ currentUser, hidden }) => (
   
          
         ) : (
-          <h1>please sign in </h1>
-
+          <div className='homepage'>
+          <h1 >Please SignIn </h1>
+        </div>
         )}
   </div>
 );
