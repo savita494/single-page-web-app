@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter} from 'react-router-dom';
+import { withRouter,Link} from 'react-router-dom';
 import './menu-item.styles.scss'
 
 
@@ -22,7 +22,8 @@ const MenuItem = ({ name, imageUrl, size, history, linkUrl, match }) => (
     
   </div>
   <div className='content'>
-      <h1 className='title'>{name.toUpperCase()}</h1>
+      <h1 className='title'>{name.toUpperCase()}  </h1>
+      {/* <Link  className='link' to='/info'>click here for more info</Link> */}
     </div>
   </div>
 );
