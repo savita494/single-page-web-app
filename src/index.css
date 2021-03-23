@@ -6,7 +6,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:rgb(179, 121, 121);
+  background-image: url('https://image.freepik.com/free-vector/bokeh-design-bright-background_23-2148497518.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
 }
 
 code {
