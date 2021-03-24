@@ -1,28 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import SHOP_DATA from './shop.data.js';
+import FRIENDSDATA from './FriendsInfo.data';
 
-import CollectionPreview from '../../components/collection-preview/collection-preview';
 
-class ShopPage extends React.Component {
-  constructor(props) {
-    super(props);
+const FriendsInfo=() =>{
 
-    this.state = {
-      collections: SHOP_DATA
-    };
+  const state =useState();
+  const [count ,setcount]=useState(5);
+  const Inc =()=>{
+  setcount(count+1);
   }
+  return(
+    <>
+    <h1>{count}</h1>
+    <button onClick={Inc}>click here</button>
 
-  render() {
-    const { collections } = this.state;
-    return (
-      <div className='shop-page'>
-        {collections.map(({ id, ...otherCollectionProps }) => (
-          <CollectionPreview key={id} {...otherCollectionProps} />
-        ))}
-      </div>
-    );
-  }
+    </>
+  )
 }
+ export default FriendsInfo;
 
-export default ShopPage;
+// class FriendsInfo extends React.Component {
+//   constructor(props) {
+//     super(props);
+
+//     this.state = {
+//       collections: FRIENDSDATA
+//     };
+//   }
+
+//   render() {
+//     const { collections } = this.state;
+//     return (
+//       <div className='friends-page'>
+//         {collections.map(({ id, ...otherCollectionProps }) => (
+//           <h1>hi</h1>
+//           //<CollectionPreview key={id} {...otherCollectionProps} />
+//         ))}
+//       </div>
+//     );
+//   }
+// }
+
+// export default FriendsInfo;
